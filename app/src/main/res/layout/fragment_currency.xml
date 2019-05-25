@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Fragments.CurrencyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8B3A3A"
+        android:text="@string/lbl_converter"
+        android:textColor="#F1F1EF"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <ImageView
+            android:id="@+id/usd_img"
+            android:layout_width="75dp"
+            android:layout_height="58dp"
+            android:layout_gravity="left"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            app:srcCompat="@drawable/usdusd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="1dp"
+            android:text="@string/str_usd"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txt_dollars"
+            android:layout_width="195dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="30dp"
+            android:gravity="right"
+            android:inputType="numberDecimal|numberSigned"
+            android:text="@string/str_initial_value" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

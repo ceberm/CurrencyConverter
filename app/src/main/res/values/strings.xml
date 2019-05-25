@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tarea_3_Cesar_Bermudez</string>
+    <string name="lbl_converter">Converter</string>
+    <string name="str_initial_value">1</string>
+    <string name="str_usd">USD</string>
+
+</resources>
